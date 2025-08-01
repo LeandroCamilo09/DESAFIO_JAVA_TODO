@@ -22,7 +22,7 @@ public class Menu {
         System.out.println();
         System.out.println("Escolha uma opção: ");
         setRequisicaoMenu(scanner.nextInt());
-        System.out.println("Você digitou: " + getRequisicaoMenu());
+
     }
 
     public int getRequisicaoMenu() {
