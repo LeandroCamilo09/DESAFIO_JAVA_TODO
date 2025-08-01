@@ -6,11 +6,14 @@ public class Tarefa {
     private String descricao;
     private boolean concluida;
 
-    public Tarefa(int id, String titulo, String descricao, boolean concluida) {
+    public Tarefa() {
+    }
+
+    public Tarefa(int id, String titulo, String descricao) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
-        this.concluida = concluida;
+        this.concluida = false;
     }
 
     public int getId() {
