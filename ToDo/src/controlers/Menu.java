@@ -1,13 +1,16 @@
 package controlers;
+import models.GerenciadorDeTarefas;
+
 import java.util.Scanner;
 public class Menu {
     private Scanner scanner;
     private int requisicaoMenu;
-
+    GerenciadorDeTarefas gerenciador;
 
     public Menu() {
         this.scanner = new Scanner(System.in);
         this.requisicaoMenu = requisicaoMenu;
+        this.gerenciador = new GerenciadorDeTarefas();
     }
 
     public void exibirMenu(){
@@ -23,6 +26,13 @@ public class Menu {
         System.out.println("Escolha uma opção: ");
         setRequisicaoMenu(scanner.nextInt());
 
+        if (requisicaoMenu == 1) {
+            gerenciador.listarTarefas();
+        } else if (requisicaoMenu == 2) {
+            gerenciador.adiconarTarefa();
+            gerenciador.listarTarefas();
+        }
+        scanner.close();
     }
 
     public int getRequisicaoMenu() {
