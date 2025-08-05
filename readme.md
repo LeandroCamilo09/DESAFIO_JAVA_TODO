@@ -51,7 +51,7 @@ ToDo/
 
 ## 🎥 Live
 
-Projeto desenvolvido **ao vivo**! Confira a gravação aqui: *(adicione o link da live se quiser)*
+Projeto desenvolvido **ao vivo**! Confira a gravação aqui: *https://youtube.com/live/vMcz0Y8Uxwo?feature=share*
 
 ## 🧠 Aprendizados
 
