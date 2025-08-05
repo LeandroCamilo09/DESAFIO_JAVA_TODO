@@ -1,10 +1,10 @@
 package controlers;
 
-public class Tarefa {
+public class Tarefa{
     private int id;
     private String titulo;
     private String descricao;
-    private boolean concluida;
+    private SituacaoEnnum concluida;
 
     public Tarefa() {
     }
@@ -13,7 +13,7 @@ public class Tarefa {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
-        this.concluida = false;
+        this.concluida = SituacaoEnnum.NAO_CONCLUIDO;
     }
 
     public int getId() {
@@ -40,11 +40,11 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public boolean isConcluida() {
+    public SituacaoEnnum getConcluida() {
         return concluida;
     }
 
-    public void setConcluida(boolean concluida) {
+    public void setConcluida(SituacaoEnnum concluida) {
         this.concluida = concluida;
     }
 }
